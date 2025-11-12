@@ -1,22 +1,16 @@
-//
-// Created by Lap on 11/12/2025.
-//
-
-#ifndef UNTITLED_ENCLOSURE_H
-#define UNTITLED_ENCLOSURE_H
-#include <array>
-using namespace std
+#ifndef ENCLOSURE_H
+#define ENCLOSURE_H
+#include "Animal.h"
 
 class Enclosure {
 private:
-    array* <Animal>;
-    int capacity ;
+    Animal** animals;
+    int capacity;
     int currentCount;
 public:
-    void addAnimal(Animal*a);
-    void displayAnimal();
-
+    Enclosure(int c);
+    ~Enclosure();
+    void addAnimal(Animal* a);
+    void displayAnimals() const;
 };
-
-
-#endif //UNTITLED_ENCLOSURE_H
+#endif
