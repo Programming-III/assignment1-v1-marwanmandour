@@ -1,15 +1,18 @@
-#ifndef VISITOR_H
-#define VISITOR_H
+//
+// Created by Lap on 11/12/2025.
+//
 
-#include <string>
-using namespace std;
-
-//define visitor class here
-
+#ifndef UNTITLED_VISOTORS_H
+#define UNTITLED_VISOTORS_H
 
 
+class visotors {
+private:
+    string vistorName;
+    int ticketsBought;
+private:
+    void displayInfo;
+};
 
 
-
-
-#endif
+#endif //UNTITLED_VISOTORS_H
