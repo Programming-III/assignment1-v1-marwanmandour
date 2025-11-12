@@ -1,23 +1,25 @@
-//
-// Created by Lap on 11/12/2025.
-//
-
-#ifndef UNTITLED_ANIMAL_H
-#define UNTITLED_ANIMAL_H
+#ifndef ANIMAL_H
+#define ANIMAL_H
 #include <iostream>
-using namespace std
+#include <string>
+using namespace std;
 
-
-class animal {
+class Animal {
 private:
-    string name ;
-    int age ;
+    string name;
+    int age;
     bool isHungry;
 public:
-    void display();
-    void feed();
-    void isHungry();
+    Animal();
+    Animal(string n, int a, bool h);
+    virtual ~Animal();
+    string getName() const;
+    int getAge() const;
+    bool getIsHungry() const;
+    void setName(string n);
+    void setAge(int a);
+    void setIsHungry(bool h);
+    virtual void display() const;
+    virtual void feed();
 };
-
-
-#endif //UNTITLED_ANIMAL_H
+#endif
