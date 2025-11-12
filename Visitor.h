@@ -1,18 +1,17 @@
-//
-// Created by Lap on 11/12/2025.
-//
+#ifndef VISITOR_H
+#define VISITOR_H
+#include <iostream>
+#include <string>
+using namespace std;
 
-#ifndef UNTITLED_VISOTORS_H
-#define UNTITLED_VISOTORS_H
-
-
-class visotors {
+class Visitor {
 private:
-    string vistorName;
+    string visitorName;
     int ticketsBought;
-private:
-    void displayInfo;
+public:
+    Visitor();
+    Visitor(string n, int t);
+    ~Visitor();
+    void displayInfo() const;
 };
-
-
-#endif //UNTITLED_VISOTORS_H
+#endif
